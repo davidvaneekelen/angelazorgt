@@ -1,0 +1,13 @@
+{
+  "name": "angelazorgt",
+  "version": "1.0.0",
+  "description": "Company website for Angela Zorgt",
+  "author": "Gideon Spierings",
+  "license": "WTFPL",
+  "scripts": {
+    "start": "http-server ."
+  },
+  "devDependencies": {
+    "http-server": "^0.12.1"
+  }
+}
