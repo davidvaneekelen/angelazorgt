@@ -84,11 +84,24 @@
 		})
 	};
 
+	var navToContact = function() {
+    $("a.nav-to-contact").on("click", function(event) {
+      $(".fh5co-tab-menu li").removeClass("active");
+      $("#contact-tab").addClass("active");
+
+      setTimeout(function() {
+        $(".fh5co-tab-content.active").removeClass("active animated fadeOutDown fadeInUp");
+        $("#contact-content").addClass("animated fadeInUp active");
+        getHeight();
+      }, 500);
+    });
+  };
+
 	// Document on load.
 	$(function(){
 		tabContainer();
 		tabClickTrigger();
-
+		navToContact();
 	});
 
 
