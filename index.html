@@ -114,8 +114,19 @@
 											return age;
 										}
 										document.write(getAge('2014-06-23'));
-									</script> jaar werkzaam in de zorg. Kijk gerust eens bij mijn opleidingen, certificeringen en werkervaringen!
-                  Sindskort ben ik actief in de zorgsector als ZZP'er. 
+									</script> jaar werkzaam in de zorg. Hiervan de afgelopen <script>
+										function getAge(dateString) {
+											let today = new Date();
+											let startDate = new Date(dateString);
+											let age = today.getFullYear() - startDate.getFullYear();
+											let m = today.getMonth() - startDate.getMonth();
+											if (m < 0 || (m === 0 && today.getDate() < startDate.getDate())) {
+													age--;
+											}
+											return age;
+										}
+										document.write(getAge('2020-02-01'));
+									</script> jaar als ZZP'er. Kijk gerust eens bij mijn opleidingen, certificeringen en werkervaringen!
                   <br></br>
                   <h3>Wat ik voor u kan betekenen</h3>
                   Kwaliteit in de zorg, daar maak ik me sterk voor. Ik vind het belangrijk dat de bewoners een goede verzorging ontvangen, en dat dit gebeurt op een manier die in lijn ligt met de geldende regels, normen en waarden.
