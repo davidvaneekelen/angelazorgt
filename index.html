@@ -90,7 +90,19 @@
                 <h1>Angela Kerkhof</h1>
                 <p>
                   <h3>Over mij</h3>
-                  Ik ben Angela Kerkhof, 27 jaar en al <script>
+                  Ik ben Angela Kerkhof, <script>
+										function getAge(dateString) {
+											let today = new Date();
+											let startDate = new Date(dateString);
+											let age = today.getFullYear() - startDate.getFullYear();
+											let m = today.getMonth() - startDate.getMonth();
+											if (m < 0 || (m === 0 && today.getDate() < startDate.getDate())) {
+													age--;
+											}
+											return age;
+										}
+										document.write(getAge('1993-01-05'));
+									</script> jaar en al <script>
 										function getAge(dateString) {
 											let today = new Date();
 											let startDate = new Date(dateString);
